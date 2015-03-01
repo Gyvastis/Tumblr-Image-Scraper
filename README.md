@@ -9,7 +9,6 @@ Basic usage:
 
 `ruby tumblr_scraper.rb <username> <directory to save images to> <number of images to download>`
 
-The only required parameter is the Tumblr *username*. 
-Script sleeps up to 3 seconds after every page opened. 
+The only required parameter is the *username* (Tumblr blog name). Script sleeps up to 3 seconds after every page opened. 
 
 Happy scraping!
