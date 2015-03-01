@@ -2,8 +2,8 @@
 require 'open-uri'
 require 'digest/md5'
 
-regex = /(http|https):\/\/\d+.media.tumblr.com\/[^\/]+\/tumblr_(.*).(jpg|png|gif)">/
-page = 1
+regex = /((http|https):\/\/\d+.media.tumblr.com\/[^\/]+\/tumblr_(.*).(jpg|png|gif))/
+page_num = 1
 count = 1
 max = 9000
 # sleep_t = 3
@@ -34,8 +34,8 @@ end
 
 while not done do
 	arr = Array.new
-	puts "[*] scraping page #{page}"
-	page = open('http://'+user+'.tumblr.com/page/'+page.to_s) do |p|
+	puts "[*] scraping page #{page_num}"
+	page = open('http://'+user+'.tumblr.com/page/'+page_num.to_s) do |p|
 		p.each_line do |line|
 			arr.push($&) if line =~ regex
 		end
@@ -53,5 +53,5 @@ while not done do
 		exit if count == max
 		# sleep rand(sleep_t)
 	end
-	page += 1
+	page_num += 1
 end
