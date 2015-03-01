@@ -3,7 +3,7 @@
 
 Every now and then, you find a [Tumblr](https://tumblr.com) blog which is just *awesome*.
 
-*Tumblr Image Scraper* allows you to quickly and easily download an entire image archive of a specified Tumblr blog.
+*Tumblr Image Scraper* allows you to quickly and easily download this entire image archive.
 
 The only required parameter is the *username* (Tumblr blog name). 
 
