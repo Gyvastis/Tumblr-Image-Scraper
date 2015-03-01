@@ -11,6 +11,6 @@ Basic usage:
 
 `ruby tumblr_scraper.rb <username> <directory to save images to> <number of images to download>`
 
-Script sleeps up to 3 seconds after every page opened in order of Tumblr to be less suspicious. Consider using proxies on your own knowledge.
+Consider applying proxies on your own knowledge.
 
 Happy scraping!
