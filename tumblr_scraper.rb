@@ -2,7 +2,7 @@
 require 'open-uri'
 require 'digest/md5'
 
-regex = /((http|https):\/\/\d+.media.tumblr.com\/[^\/]+\/tumblr_(.*).(jpg|png|gif))/
+regex = /((http|https):\/\/\d+.media.tumblr.com\/[^\/]+\/tumblr_[^\.]*\.(jpg|png|gif))/
 page_num = 1
 count = 1
 max = 9000
